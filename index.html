@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería LOSSINPELO</title>
+    <style>
+        
+        body {
+            background-color: #7b5e4d; 
+            color: #ffffff; 
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+       nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: #634a3a;
+        }
+
+        nav a {
+            color: #f3e5ab;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-bottom: 2px solid #333;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #f3e5ab;
+            color: #333;
+        }
+
+        
+        .header-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #8b6b5a;
+        }
+
+        .info-left, .nosotros-right {
+            width: 30%;
+            font-size: 0.9rem;
+            text-align: left;
+        } 
+
+        /* la cosa que reemplaza el logo por qu eno pude poner el logo perdon yo del fututro*/
+        .logo-central {
+            width: 250px;
+            height: 250px;
+            background-color: black;
+            border: 5px dashed white;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .logo-central h1 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            border: 1px solid white;
+            padding: 5px;
+            letter-spacing: 3px;
+        }
+
+        
+        .servicios {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px;
+            background-color: #7b5e4d;
+            border-top: 2px solid #333;
+        }
+
+        .columna {
+            width: 33%;
+            padding: 0 15px;
+            border-right: 1px solid #333;
+        }
+
+        .columna:last-child {
+            border-right: none;
+        }
+
+        .columna h2 {
+            text-decoration: underline;
+            font-size: 1.3rem;
+        }
+
+
+        .precios {
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+
+        
+        footer {
+            background-color: #4a3528;
+            padding: 20px;
+            font-family: 'Old English Text MT', serif; 
+            font-size: 2rem;
+        }
+
+        /* Responsivo :´´3*/
+        @media (max-width: 768px) {
+            .header-container, .servicios {
+                flex-direction: column;
+            }
+            .info-left, .nosotros-right, .columna {
+                width: 100%;
+                margin-bottom: 20px;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="https://wa.me/123456789" target="_blank">Agregar Cita</a> 
+        <a href="politicas.html">Politicas De La Tienda</a>
+        <a href="mailto:correo@ejemplo.com">Contacto</a>
+    </nav>
+    
+
+
+    
+    <header class="header-container">
+        <div class="info-left">
+            <p>De lunes a sabado <strong>10 AM - 5 PM</strong></p>
+            <p>Carrera 45 #12-78, Barrio Laureles, Medellin, Antioquia, Colombia</p>
+        </div>
+
+        <div class="logo-central">
+            
+            <div style="font-size: 50px;">✂️💈</div>
+            <h1>LOSSINPELO</h1>
+        </div>
+
+        <div class="nosotros-right">
+            <h3>Nosotros</h3>
+            <p>Somos una barbería colombiana apasionada por el estilo y el cuidado masculino. Nos especializamos en cortes modernos clásicos y arreglo profesional de barba.</p>
+        </div>
+    </header>
+
+    
+    <section class="servicios">
+        
+        <div class="columna">
+            <h2>Corte de Cabello</h2>
+            <p>corte clasico y moderno</p>
+            <div class="icono-servicio">👤✂️</div>
+            <div class="precios">
+                <p>corte basico desde 15Mil COP</p>
+                <p>Corte estandar y estilizado apartir de 35Mil COP</p>
+            </div>
+        </div>
+
+        
+        <div class="columna">
+            <h2>Arreglo de Barba</h2>
+            <p>diseño y cuidado de barba</p>
+            <div class="icono-servicio">🧔</div>
+            <div class="precios">
+                <p>Arreglo sencillo de barba entre 10mil 12mil COP</p>
+                <p>Servicios adicionales 25mil 35mil COP </p>
+                <p>combo corte mas barba basicos 23Mil  35Mil COP</p>
+                <p>Combo con servicios de labado y estilizado mas complejos 34Mil 60Mil COP</p>
+            </div>
+        </div>
+
+        
+        <div class="columna">
+            <h2>Decoloracion de Cabello</h2>
+            <p>decoloracion sin resecar</p>
+            <div class="icono-servicio">🥣🖌️</div>
+            <div class="precios">
+                <p>Decolorado de cabello a partir de 160mil 260mil COP</p>
+                <p> Mechones, todo el cabello y especiales desde 300mil - millon doscientos COP</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="contacto">
+        Como motilando calvos
+    </footer>
+
+</body>
+</html>
